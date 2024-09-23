@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframes</title>
+  </head>
+  <body>
+    <h1>Conteudos com Iframe</h1>
+    <hr />
+
+    <h2>Carregando conteudo externo</h2>
+
+    <h3>Videos</h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/6ZoRwnaoBRU?si=apLjYxawfdCO_EIN"
+      title="YouTube video player"
+      frameborder="0"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <h3>Maps</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.17609349923!2d-46.54286672376093!3d-23.526168060301877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e46752d26e5%3A0xfd7d34baaa261c06!2sR.%20Francisco%20Coimbra%2C%20403%20-%20Penha%20de%20Fran%C3%A7a%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003639-000!5e0!3m2!1spt-BR!2sbr!4v1724243452318!5m2!1spt-BR!2sbr"
+      width="400"
+      height="300"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <hr />
+
+    <h2>Carregando conteudo interno</h2>
+    <p>
+      <a href="imagens/dedos.jpg" target="gallery">Dedos</a>
+      <a href="imagens/ideias.jpg" target="gallery">Idéias</a>
+      <a href="imagens/pacoca.jpg" target="gallery">Paçoca</a>
+    </p>
+
+    <iframe
+      src="imagens/dedos.jpg"
+      frameborder="0"
+      scrolling="no"
+      width="549"
+      height="200"
+      name="gallery"
+    >
+    </iframe>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com formulário</title>
+  </head>
+  <body>
+    <h1>Exemplo de Formulário</h1>
+    <hr />
+
+    <form action="/" method="post">
+      <p>
+        <label for="nome">Nome completo:</label><br />
+        <input type="text" name="nome" id="nome" required autocomplete="off" />
+      </p>
+
+      <p>
+        <label for="email">E-mail:</label><br />
+        <input type="text" name="email" id="email" required />
+      </p>
+
+      <p>
+        <label for="telefone">Telefone:</label><br />
+        <input type="tel" name="telefone" id="telefone" required />
+      </p>
+
+      <div>
+        <p>Deseja receber informativos?</p>
+        <label for="sim">Sim</label>
+        <input type="radio" name="info" id="sim" value="Sim" /><br />
+
+        <label for="nao">Não</label>
+        <input type="radio" name="info" id="nao" value="Não" />
+      </div>
+
+      <div>
+        <p>Deseja receber informações sobre quais tecnologias?</p>
+        <label for="frontend">Front-end</label>
+        <input
+          type="checkbox"
+          name="interesses"
+          id="frontend"
+          value="Frontend"
+        /><br />
+
+        <label for="backend">Back-end</label>
+        <input
+          type="checkbox"
+          name="interesses"
+          id="backend"
+          value="Backend"
+        /><br />
+
+        <label for="mobile">Mobile</label>
+        <input type="checkbox" name="interesses" id="mobile" value="Mobile" />
+      </div>
+
+      <p>
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" min="14" max="100" />
+      </p>
+
+      <p>
+        <label for="data">Data de Nascimento:</label>
+        <input
+          type="date"
+          name="data"
+          id="data"
+          min="2020-01-01"
+          max="2025-01-01"
+        />
+      </p>
+
+      <p>
+        <label for="assunto">Assuntos</label>
+        <select name="assunto" id="assunto">
+          <option value=""></option>
+          <option value="2">Reclamações</option>
+          <option value="3">Elogios</option>
+          <option value="4">Dúvias</option>
+          <option value="5">Outros</option>
+        </select>
+      </p>
+
+      <p>
+        <label required for="mensagem">Mensagem</label><br />
+        <textarea
+          name="mensagem"
+          id="mensagem"
+          cols="10"
+          rows="5"
+          minlength="5"
+          maxlength="50"
+          placeholder="Escreva aqui"
+        ></textarea>
+      </p>
+
+      <button type="submit">Enviar dados</button>
+    </form>
+  </body>
+</html>

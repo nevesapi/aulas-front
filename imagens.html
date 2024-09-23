@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com imagens</title>
+  </head>
+
+  <body>
+    <h1>Exemplos de uso de imagens</h1>
+    <hr />
+
+    <h2>Formatos mais comuns</h2>
+    <p>
+      Confira abaixo os formatos mais comuns para o uso de imagens para a web:
+    </p>
+    <ul>
+      <li>JPEG</li>
+      <li>PNG</li>
+      <li>SVG</li>
+      <li>GIF</li>
+      <li>WebP</li>
+    </ul>
+
+    <h2>Exemplos:</h2>
+    <!-- 
+      Tag <img>
+        possui dois atributos:
+          -SRC = Define o caminho, nome e formato do arquivo que será exibido no navegador
+          -ALT = Texto alternativo que descreve a imagem de forma objetiva caso não seja possível renderiza-la no navegador. Muito utilizada pelos leitores de tela para a acessibilidade.
+
+          Veja o exemplo abaixo:
+    -->
+    <img
+      src="imagens/pink-floyd.jpg"
+      alt="Foto dos integrantes da banda pink floyd acenando!"
+    />
+
+    <h2>Imagens combinadas com outras tags</h2>
+    <p>
+      <img src="imagens/logo-html5.png" alt="" />
+      <img src="imagens/logo-css3.gif" alt="" />
+      <img src="imagens/logo-javascript.gif" alt="" />
+    </p>
+
+    <!-- 
+      tag <div></div>
+      tag generica não semantica. Muito utilizada para agrupar elementos.
+    -->
+    <div>
+      <img src="imagens/dedos.jpg" alt="" />
+      <img src="imagens/ideias.jpg" alt="" />
+      <img src="imagens/back-end.jpg" alt="" />
+    </div>
+
+    <figure>
+      <img
+        src="imagens/diagrama-dom.png"
+        alt="Diagrama estrutural de uma página HTML5"
+      />
+      <figcaption>
+        Estudos de JS: relação entre elementos de uma página web no DOM.
+      </figcaption>
+    </figure>
+
+    <h2>WebP: formato mais moderno</h2>
+    <div>
+      <img src="imagens/praia.webp" alt="Foto do por do sol na praia" />
+    </div>
+
+    <h2>Comapração bitmap x vetor</h2>
+    <img src="imagens/black-cat.png" alt="" />
+    <img src="imagens/black-cat.svg" alt="" />
+
+    <h2>Arquivos da raiz</h2>
+    <p><a href="ola-mundo.html">Olá mundo</a></p>
+    <p><a href="links.html">Links</a></p>
+    <p><a href="listas.html">Listas</a></p>
+    <p><a href="testes.html">Testes</a></p>
+    <p><a href="link-vertical.html">Link Vertical</a></p>
+
+    <h2>Confira os exercicios</h2>
+    <p><a href="exercicios/exercicio01.html">exercicio01</a></p>
+    <p><a href="exercicios/exercicio02.html">exercicio02</a></p>
+  </body>
+</html>
+

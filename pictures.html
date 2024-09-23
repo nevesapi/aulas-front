@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com pictures</title>
+</head>
+<body>  
+  <h1>Picture</h1>
+  <p>A tag <code>picture</code> permite que diferentes versões de uma imagem sejam carregadas com base no tamanho da tela.</p>
+
+  <p>O uso desta tag faz parte de uma técnica de design chamada <b>Art Direction</b>.</p>
+
+  <picture>
+    <source media="(min-width: 800px)" srcset="./imagens/ideias.jpg">
+    <source media="(min-width: 500px)" srcset="./imagens/ideias-media.jpg">
+    <img src="imagens/ideias-pequena.jpg" alt="">
+  </picture>
+</body>
+</html>

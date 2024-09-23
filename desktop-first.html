@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Responsivo - Desktop First</title>
+
+    <style>
+      /* Etapa 1: regras comuns, regras de uso geral,
+regras que talvez não mudem mesmo em telas menores etc */
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana;
+        background-color: gold;
+      }
+      html {
+        font-size: 15px;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+
+      body,
+      h1,
+      h2 {
+        margin: 0;
+        padding: 0;
+      }
+      figure {
+        margin: 0;
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+      }
+      span {
+        background-color: darkblue;
+        color: white;
+        padding: 4px;
+      }
+      .container {
+        background-color: white;
+        max-width: 700px;
+        margin: auto;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: red 0 0 10px;
+      }
+
+      /* Etapa 2: regras de uso condicional, regras definidas através de Media Queries conforme tamanho de tela necessário/desejado. */
+
+      /* Para telas de até 700px de largura (max-width) */
+      @media screen and (max-width: 700px) {
+        .container {
+          width: 95vw;
+          box-shadow: none;
+          border-radius: 0;
+        }
+      }
+
+      @media screen and (max-width: 550px) {
+        body {
+          background-color: lightblue;
+        }
+        html {
+          font-size: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Media Queries - Abordagem <span>Desktop First</span></h1>
+      <hr />
+      <h2>Conceitos</h2>
+      <p>
+        São regras especiais em que criamos alterações na página de acordo com
+        <b>determinadas condições</b>.
+      </p>
+      <p>
+        Também são conhecidas como <b>breakpoints</b> (pontos de adaptação).
+      </p>
+      <h2>Aplicação</h2>
+      <p>
+        Media Queries são aplicadas de acordo com a estratégia usada para design
+        responsivo.
+      </p>
+
+      <ul>
+        <li>Mobile First: telas pequenas para grandes</li>
+        <li><b>Desktop First: telas grandes para pequenas</b></li>
+      </ul>
+
+      <figure>
+        <img src="imagens/front-end.jpg" alt="" />
+        <figcaption>Design Responsivo</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>

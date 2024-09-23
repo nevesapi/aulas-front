@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Verdana;
+      }
+
+      .container {
+        border: solid 1px;
+        padding: 4px 0;
+        width: 80%;
+        margin: auto;
+        background-color: aquamarine;
+
+        /* Habilitando o Flexbox */
+        display: flex;
+
+        /* Eixo/Axis do Flexbox
+    Direção ROW/LINHA (padrão) ou
+    Direção COLUMN/COLUNA */
+        flex-direction: row;
+
+        flex-wrap: wrap;
+
+        gap: 10px 0px;
+
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      img {
+        max-width: 100%;
+        border-radius: 6px;
+      }
+
+      article {
+        background-color: white;
+        width: 30%;
+        padding: 4px;
+        border-radius: 8px;
+        /* margin-bottom: 10px; */
+
+        h2 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Trabalhando com Flexbox</h1>
+    <hr />
+    <p>
+      Flexbox é um mecanismo que permite aplicar facilmente recursos de
+      alinhamento, espaçamento e distribuição de elementos na página. Muito útil
+      na elaboração de layouts comuns, baseados em linhas e colunas.
+    </p>
+
+    <div class="container">
+      <article>
+        <img src="imagens/mini-apple.jpg" alt="" />
+        <h2>Apple</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+          eveniet.
+        </p>
+      </article>
+
+      <article>
+        <img src="imagens/mini-ibm.jpg" alt="" />
+        <h2>IBM</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+          eveniet.
+        </p>
+      </article>
+
+      <article>
+        <img src="imagens/mini-microsoft.jpg" alt="" />
+        <h2>Microsoft</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+          eveniet.
+        </p>
+      </article>
+
+      <article>
+        <img src="imagens/mini-apple.jpg" alt="" />
+        <h2>Apple</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+          eveniet.
+        </p>
+      </article>
+
+      <article>
+        <img src="imagens/mini-ibm.jpg" alt="" />
+        <h2>IBM</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+          eveniet.
+        </p>
+      </article>
+
+      <article>
+        <img src="imagens/mini-microsoft.jpg" alt="" />
+        <h2>Microsoft</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+          eveniet.
+        </p>
+      </article>
+
+      <article>
+        <img src="imagens/mini-apple.jpg" alt="" />
+        <h2>Apple</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+          eveniet.
+        </p>
+      </article>
+
+      <article>
+        <img src="imagens/mini-ibm.jpg" alt="" />
+        <h2>IBM</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+          eveniet.
+        </p>
+      </article>
+
+      <article>
+        <img src="imagens/mini-microsoft.jpg" alt="" />
+        <h2>Microsoft</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+          eveniet.
+        </p>
+      </article>
+    </div>
+  </body>
+</html>

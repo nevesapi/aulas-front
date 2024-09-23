@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile First - Responsividade</title>
+
+    <style>
+      /* ETAPA 1 > Regras gerais e comuns */
+      *,
+      *::after,
+      *::before {
+        /* margin: 0;
+        padding: 0; */
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 10px;
+      }
+
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #79dd81;
+        color: #1c1c1c;
+      }
+
+      span {
+        background-color: #6f9c3b;
+        color: white;
+        padding: 0.5rem;
+      }
+
+      .container {
+        background-color: #ffffff;
+        width: 95vw;
+        margin: auto;
+        padding: 0.8rem;
+      }
+
+      figure {
+        margin: 0;
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 2rem;
+      }
+
+      /* ETAPA 2 > Regras de uso condicional, media queries */
+      /* Regra que utiliza alguns tamanhos para ajustes de elementos nas telas, não existe um valor perfeito para definir esse ajuste, o valor depende do comportamento dos elementos. */
+      @media screen and (min-width: 623px) {
+        body {
+          background-color: #838e23;
+        }
+
+        html {
+          font-size: 15px;
+        }
+      }
+
+      /* Exercicio media querie */
+      @media screen and (min-width: 789px) {
+        body {
+          background-color: #dddb79;
+        }
+        .container {
+          max-width: 700px;
+          border-radius: 1rem;
+          box-shadow: 2px 2px 16px #951eb9b2;
+        }
+
+        h1 {
+          text-align: center;
+        }
+
+        span {
+          background-color: #9779dd;
+          border-radius: 16px;
+          display: inline-block;
+        }
+
+        h2 {
+          border-left: 6px solid #420177;
+          padding-left: 1rem;
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="container">
+      <h1>Media Queries - Abordagem <span>Mobile First</span></h1>
+      <hr />
+      <h2>Conceitos</h2>
+      <p>
+        Media Queries são regras especiais que criamos na página de acordo com
+        <b>determinadas condições</b>.
+      </p>
+      <p>
+        Também são conhecidas como <b>Breakpoints</b> (pontos de adaptação).
+      </p>
+      <hr />
+      <h2>Aplicação</h2>
+      <p>
+        Media Queries são aplicadas de acordo com a estratégia usada para design
+        responsivo.
+      </p>
+
+      <ul>
+        <li><b>Mobile First: Telas pequenas para grandes</b></li>
+        <li>Desktop First: Telas grandes para pequenas</li>
+      </ul>
+
+      <figure>
+        <img src="imagens/front-end.jpg" alt="" />
+        <figcaption>Design responsivo</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>
